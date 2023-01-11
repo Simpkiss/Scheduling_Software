@@ -9,8 +9,11 @@ The purpose of this application is to create a GUI based scheduling program that
 ## Author information
 
 Author: Aaron Simpkiss
+
 Email: asimpk4@wgu.edu
+
 Application version: 1.0
+
 Date: 1/11/2023
 
 
