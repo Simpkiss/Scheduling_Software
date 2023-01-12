@@ -67,7 +67,6 @@ public class logInController implements Initializable {
         if ((database.userDB.userCheck(userNameField.getText(), passwordField.getText()))) {
             pass = true;
             userLoggedIn = userNameField.getText();
-            JDBC.closeConnection();
         }
         else {
             errorText.setTextFill(Color.RED);
@@ -165,19 +164,5 @@ public class logInController implements Initializable {
         timeZoneText.setText(localTZ.toString());
         locale =Locale.getDefault();
         setLang();
-    }
-
-    /** Button I put in that let me skip logging in but still alerted the logger and recorded pertinent info.
-     *
-     */
-    public void skipCreds(ActionEvent event) throws IOException, SQLException {
-        logInLogger.newLog("bypass button",true);
-        userLoggedIn = "Aaron";
-        upcomingAppts();
-        Parent root= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/appointmentsScreen.fxml")));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
 }
