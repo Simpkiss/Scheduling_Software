@@ -12,7 +12,12 @@ Author: Aaron Simpkiss
 
 Email: asimpk4@wgu.edu
 
-Application version: 1.0
+Application version: 1.1
+
+Update Notes: 
+ - Button that skipped credential check for ease of building has been removed, now credentials must be entered to log in.
+ - Call to close connection in credential check function has been removed, was causing subsequent functions that relied on connection to throw errors.
+ - Report model now has missing necessary setters/getters that coused report page to not load required reports.
 
 Date: 1/11/2023
 
