@@ -1,5 +1,5 @@
-# C195 Software II - Advanced Java Concepts
-
+# Scheduling software
+Created for WGU Software II - Advanced Java Concepts. This code was written and run on a VM that had the relevant database installed on it, as such this software would need to have an identical database created for it to run outside of that environment.
 
 ## Purpose of application
 
